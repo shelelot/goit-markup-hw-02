@@ -70,6 +70,7 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 .button-one {
+    font-family: inherit;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -90,6 +91,8 @@ body {
     height: 101px;
     left: 215px;
     top: 774px;
+    display: flex;
+    justify-content: space-between;
 
 }
 .features-box {
@@ -127,6 +130,18 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+}
+.team {
+    width: 1600px;
+    height: 648px;
+    left: 0px;
+    top: 1449px;
+    background-color: #F5F4FA;
+}
+.team-list {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
 }
 .team-title {
     font-style: normal;
@@ -183,6 +198,7 @@ body {
 
 /* Portfolio */
 .filters .buttons-filter {
+    font-family: inherit;
     color: #212121;
     background-color: #F5F4FA;
     border: transparent;
