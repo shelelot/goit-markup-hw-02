@@ -3,10 +3,36 @@ body {
     background-color: #E5E5E5;
     color: #757575;
 }
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 1px solid red;
+}
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 /* HEADER */
+.heder-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+}
 .logo {
     font-family: 'Raleway';
     font-style: normal;
@@ -16,12 +42,22 @@ body {
     letter-spacing: 0.03em;
     text-decoration: none;
     color: #2196F3; 
+    margin-right: 93px;
 }
 .logo-span {
     color: #000;
 }
 .logo-span.white {
     color: #FFFFFF;
+}
+
+.site-nav,
+.auth-nav {
+    display: flex;
+}
+
+.site-list-item:not(:last-child) {
+    margin-right: 50px;
 }
 .site-nav .link {
     font-style: normal;
@@ -32,12 +68,19 @@ body {
     text-decoration: none;
     color: #212121;
 }
+
 .site-nav .link:hover, 
 .site-nav .link:focus {
     color: #2196F3;
 }
 .site-nav .link.current {
     color: #2196F3;
+}
+.auth-nav {
+    margin-left: auto;
+}
+.auth-list-item:not(:first-child) {
+    margin-left: 50px;
 }
 .auth-nav .link {
     font-style: normal;
@@ -52,9 +95,9 @@ body {
 .auth-nav .link:focus {
     color: #2196F3;
 }
+
 /* HERO */
-.container-hero {
-    width: 1600px;
+.section-hero {
     height: 600px;
     background-color: rgba(47, 48, 58, 1);
 }
@@ -79,6 +122,7 @@ body {
     font-size: 16px;
     line-height: 1.88;
     border: transparent;
+    display: flex;
     text-align: center;
     letter-spacing: 0.06em;
     width: 200px;
@@ -87,6 +131,7 @@ body {
     background-color: #2196F3;
     cursor: pointer;
     border-radius: 4px;
+    padding: 10px 32px;
 }
 /* Features */
 .features-list {
@@ -117,10 +162,10 @@ body {
     top: 774px;
     color: #212121;
 }
-.feature-text {
+.features-text {
     font-size: 14px;
-    line-height: 1.19;
-    position: absolute;
+    margin: 0;
+    line-height: 1.71;
     width: 270px;
     height: 75px;
     left: 215px;
@@ -158,6 +203,7 @@ body {
 }
 .team-text {
     font-size: 16px;
+    margin: 0%;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
@@ -232,6 +278,7 @@ body {
 }
 .portfolio-text {
     font-size: 16px;
+    margin: 0;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: #757575;
